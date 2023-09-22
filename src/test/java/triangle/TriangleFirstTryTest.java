@@ -1,11 +1,8 @@
-package triangle.implementations.tbach;
+package triangle;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
-
-import triangle.Triangle;
-import triangle.TriangleResult;
 
 public class TriangleFirstTryTest {
 

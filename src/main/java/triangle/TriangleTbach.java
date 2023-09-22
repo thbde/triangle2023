@@ -1,7 +1,4 @@
-package triangle.implementations.tbach;
-
-import triangle.Triangle;
-import triangle.TriangleResult;
+package triangle;
 
 public class TriangleTbach implements Triangle {
 
