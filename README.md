@@ -14,5 +14,4 @@
   * Insert "java.home": "C:\\Program Files\\AdoptOpenJDK\\jdk-15.0.0.36-hotspot" (adapt path to your own environment)
 * Use `maven` box to `compile`,`test`,...
 * Use `Testing` tab to execute unit tests
-
-
+ 
