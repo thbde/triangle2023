@@ -4,9 +4,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.Test;
 
-public class TriangleFirstTryTest {
+public class TriangleFirstTryTestKb {
 
-	public static final Triangle triangle = new TriangleFirstTry();
+	public static final Triangle triangle = new TriangleNextTryKb();
 
 	@Test
 	public void testGetTriangleResultForLengthsNotEqual() {
@@ -65,5 +65,31 @@ public class TriangleFirstTryTest {
 		final TriangleResult result = triangle.getTriangleResultForLengths(input);
 		assertThat(result).isEqualTo(expected);
 	}
+	
+	@Test
+	public void testGetTriangleResultForLengthsEqualsZero() {
+		final int[] input = { 0, 42, 42 };
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
+	
+	@Test
+	public void testGetTriangleResultForLengthsEmptyInput() {
+		final int[] input = { };
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
+	
+	@Test
+	public void testGetTriangleResultForLengthsForInput() {
+		final int[] input = {1,2,3,4 };
+		final TriangleResult expected = TriangleResult.UNKNOWN;
+		final TriangleResult result = triangle.getTriangleResultForLengths(input);
+		assertThat(result).isEqualTo(expected);
+	}
 
 }
+
+
